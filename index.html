@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7bfea11df3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Welcome!</p>
+            <h1>Hi, I'm <span>Nazifa</span><br>Aspiring Mechatronics Engineer</h1>
+        </div>
+    </div>
+</div>
+<!---------------------about------------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I’m Nazifa Tasnia, a dedicated and innovative engineering professional with a passion
+                for solving complex problems and improving systems. With a background in project management, 
+                mechanical engineering, and process improvement, I bring a comprehensive skill set to every project I undertake.
+                My experience spans a range of technical and analytical roles, and I am particularly interested in mechatronics
+                and robotics with a passion to create a sustainable future! I am currently in my final year of studies and am 
+                excited to continue exploring new challenges and opportunities in the engineering field.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Project Management</span><br>Managed projects, including overseeing course and internship projects, ensuring timely completion and alignment with objectives. </li>
+                            <li><span>Process Improvement</span><br>Skilled in identifying and implementing process improvements, maintaining KPIs, and using feedback to drive enhancements.</li>
+                            <li><span>Analytics Skills</span><br>Experienced in using morphological charts and evaluation matrices for design optimization and decision-making.</li>
+                            <li><span>Communication</span><br>Create and deliver comprehensive reports, presentations, and documentation.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-2024 Internship</span><br>Toronto Hydro Electric System Limited</li>
+                            <li><span>2022 Special Projects Assistant</span><br>Innovation Boost Zone</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Exp. May 2025</span><br>Mechatronics Engineering at Toronto Metropolitan University</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------services-------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Technical Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-swatchbook"></i>
+                <h2>Computer-Aided Design</h2>
+                <p>Proficient in SolidWorks for creating 3D models, assemblies, and technical drawings.
+                Skilled in designing mechanical components with precision, manufacturability, and compliance with engineering standards.
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-tachograph-digital"></i>
+                <h2>Data Analytics & Visualization</h2>
+                <p>Experienced in using Tableau for creating dynamic dashboards and visualizations that translate complex data into clear, actionable insights. 
+                Proficient in Alteryx for data preparation and performing advanced analytics, enabling efficient processing of large datasets and automation of data workflows.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Coding</h2>
+                <p>Proficient in Python and C++ for developing software solutions, automating tasks, and performing data analysis. 
+                Experienced in writing efficient, maintainable code and implementing algorithms for various engineering and data-driven applications.</p>
+            </div>
+        </div>
+           
+    </div>
+</div>
+<!-----------------------------portfolio--------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>ELEGOO UNO R3 Smart Robot Car</h3>
+                    <p>This project is an innovative exploration into the integration of robotics and electronics.</p>
+                    <p>Utilizing the versatile ELEGOO UNO R3 microcontroller, this project transforms a 
+                    basic robotic car kit into a programmable vehicle capable of:</p>
+                    <ul>
+                        <li>autonomous navigation (solving a maze)</li>
+                        <li>environmental interaction (adjust turns, follow correct path)</li>
+                    </ul>
+                    <a href="Car.pdf" download class="download-icon">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Parkinson Friendly Can Opener</h3>
+                    <p>This project is dedicated to developing a practical and accessible tool
+                     designed to enhance the quality of life for individuals living with Parkinson’s
+                     disease or other motor impairments. This innovative can opener is engineered to 
+                     provide ease of use and reduce the physical strain associated with opening cans, 
+                     ensuring greater independence and convenience.</p>
+                     <a href="Can.pdf" download class="download-icon">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Multifunctional Arm</h3>
+                    <p>This project involved developing a fully functioning mechanical arm while 
+                    adhering to four material and design constraints. Working with a team of five students, 
+                    we established a set of functional requirements and utilized morphological charts and 
+                    evaluation matrices to identify the optimal design based on engineering principles.</p>
+                    <a href="Arm.pdf" download class="download-icon">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------------------contact------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>Let's Get in Touch!
+                <br>For inquiries or to start connecting, please leave a message.
+                <br>I would love to hear from you!
+                </p>
+            <a href="ShaikhTasnia_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required> 
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div> 
+    </div>
+    <div class="copyright">
+        <img src="logo.png" class="logo">
+        <div class="social-icons">
+            <a href= "mailto: shaikh.tasnia@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/s-nazifa-tasnia/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>© 2024 S.N Tasnia. All Rights Reserved</p>  
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxu3aBTRWIAPInEnpPfoL6uZo7QNAzxOcUHqMpmjx2Ac-48fjvGbfLGZgj2uPm817Sjww/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Successfully" 
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
